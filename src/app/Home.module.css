@@ -1,0 +1,96 @@
+.main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+    background-color: rgb(156, 105, 211); /* Warna ungu keputihan dalam rgba */
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 25rem;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .features {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .features {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .feature {
+    color: rgb(156, 105, 211);
+    background-color: rgb(255, 255, 255); /* Warna ungu keputihan dalam rgba */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .featureTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .featureDescription {
+    color: #4B5563;
+  }
+  
+  .ctaContainer {
+    margin-top: 3rem;
+  }
+  
+  .ctaButton {
+    background-color: #3B82F6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #2563EB;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .footer p {
+    margin: 0.5rem 0;
+    color: #4b5563;
+    font-size: 0.875rem;
+  }
+
+  .heart {
+    color: #ef4444;
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
